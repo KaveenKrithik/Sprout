@@ -1,11 +1,11 @@
-# 🌱 SPROUT: Smart Agriculture Robot
+# SPROUT: Smart Agriculture Robot
 
 [![Arduino](https://img.shields.io/badge/Arduino-00979D?style=for-the-badge&logo=Arduino&logoColor=white)](https://www.arduino.cc/)
 [![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white)](https://nextjs.org/)
 [![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white)](https://nodejs.org/)
 [![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)](https://www.mongodb.com/)
 
-## 📋 Overview
+## Overview
 
 **Sprout** is an innovative agricultural robot designed to automate and optimize essential farming operations, including **plowing**, **seed sowing**, and **irrigation**. Powered by an Arduino microcontroller and integrated with IoT and Bluetooth connectivity, Sprout enables smart, data-driven farming practices aimed at improving efficiency, reducing manual labor, and conserving natural resources.
 
@@ -13,19 +13,19 @@ This project demonstrates the fusion of **robotics**, **embedded systems**, and 
 
 ---
 
-## ✨ Key Features
+## Key Features
 
-- 🚜 **Automated Plowing**: Motorized blades prepare the soil uniformly for optimal crop growth
-- 🌾 **Seed Sowing System**: Mechanized seed dispenser ensures uniform depth and spacing
-- 💧 **Smart Irrigation**: Automated water pump operates based on real-time soil moisture data
-- 📱 **Bluetooth Remote Control**: Enables wireless control through a mobile application
-- 🖥️ **Web-Based Dashboard**: Built with Next.js and Node.js for real-time data visualization and analytics
-- 📊 **Sensor Integration**: Collects data on soil moisture, motor status, and battery health
-- 🔧 **Scalable and Modular Design**: Allows future integration of additional modules such as pesticide sprayers or fertilization units
+- **Automated Plowing**: Motorized blades prepare the soil uniformly for optimal crop growth
+- **Seed Sowing System**: Mechanized seed dispenser ensures uniform depth and spacing
+- **Smart Irrigation**: Automated water pump operates based on real-time soil moisture data
+- **Bluetooth Remote Control**: Enables wireless control through a mobile application
+- **Web-Based Dashboard**: Built with Next.js and Node.js for real-time data visualization and analytics
+- **Sensor Integration**: Collects data on soil moisture, motor status, and battery health
+- **Scalable and Modular Design**: Allows future integration of additional modules such as pesticide sprayers or fertilization units
 
 ---
 
-## 🏗️ System Architecture
+## System Architecture
 
 ### Hardware Components
 
@@ -48,7 +48,7 @@ This project demonstrates the fusion of **robotics**, **embedded systems**, and 
 
 ---
 
-## 🔄 Functional Workflow
+## Functional Workflow
 
 ```mermaid
 graph LR
@@ -67,7 +67,7 @@ graph LR
 
 ---
 
-## 📊 Experimental Results
+## Experimental Results
 
 Field experiments demonstrated Sprout's efficiency across key agricultural operations:
 
@@ -82,7 +82,7 @@ These results confirm Sprout's **reliability**, **precision**, and suitability f
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 SPROUT/
@@ -108,7 +108,7 @@ SPROUT/
 
 ---
 
-## 🛠️ Tools and Technologies
+## Tools and Technologies
 
 ### Hardware
 - **Microcontroller**: Arduino Uno
@@ -123,7 +123,7 @@ SPROUT/
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -169,20 +169,20 @@ npm run dev
 
 ---
 
-## 🎯 Future Enhancements
+## Future Enhancements
 
 Sprout's architecture supports further expansion toward a fully autonomous and AI-driven system. Potential future upgrades include:
 
-- 🤖 **AI and Machine Learning**: Predictive irrigation, crop disease detection, and adaptive control
-- 🛰️ **GPS-Based Navigation**: Automated path planning and field coverage
-- ☁️ **Cloud Integration**: Remote access and analytics using AWS IoT or Google Cloud IoT
-- ☀️ **Solar-Powered Operation**: Sustainable energy integration for continuous field use
-- 🔬 **Advanced Sensors**: Soil nutrient and pH analysis for precision agriculture
-- 🤝 **Swarm Robotics**: Multi-unit collaboration for large-scale farming
+- **AI and Machine Learning**: Predictive irrigation, crop disease detection, and adaptive control
+- **GPS-Based Navigation**: Automated path planning and field coverage
+- **Cloud Integration**: Remote access and analytics using AWS IoT or Google Cloud IoT
+- **Solar-Powered Operation**: Sustainable energy integration for continuous field use
+- **Advanced Sensors**: Soil nutrient and pH analysis for precision agriculture
+- **Swarm Robotics**: Multi-unit collaboration for large-scale farming
 
 ---
 
-## 👥 Contributors
+## Contributors
 
 <table>
   <tr>
@@ -205,18 +205,18 @@ SRM Institute of Science and Technology, Kattankulathur
 
 ---
 
-## 📄 License
+## License
 
 This project is developed as part of academic research at SRM Institute of Science and Technology.
 
 ---
 
-## 📧 Contact
+## Contact
 
 For queries and collaboration opportunities, please reach out to the contributors through their institutional email addresses.
 
 ---
 
 <div align="center">
-  <b>Built with ❤️ for Smart Agriculture</b>
+  <b>Built for Smart Agriculture</b>
 </div>
