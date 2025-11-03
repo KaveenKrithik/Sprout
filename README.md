@@ -41,10 +41,12 @@ This project demonstrates the fusion of **robotics**, **embedded systems**, and 
 
 ### Software Components
 
-- **Arduino IDE (C/C++)**: Firmware development and embedded control logic
-- **Bluetooth Control App (APK)**: User interface for movement and irrigation control
-- **Next.js Dashboard (Frontend)**: Displays live metrics and performance analytics
-- **Node.js Backend**: Handles API requests, sensor data processing, and storage
+- **Arduino Firmware (C/C++)**: Embedded control logic for motors, sensors, and Bluetooth communication
+- **Web Dashboard (React + TypeScript)**: Real-time monitoring interface with data visualization
+  - Built with Vite for fast development and optimized production builds
+  - shadcn/ui components for modern, accessible UI
+  - Recharts for performance metrics and analytics visualization
+  - Responsive design for desktop and mobile viewing
 
 ---
 
@@ -87,22 +89,22 @@ These results confirm Sprout's **reliability**, **precision**, and suitability f
 ```
 SPROUT/
 │
-├── hardware/
-│   ├── circuit_diagram/          # Circuit schematics and wiring diagrams
-│   ├── pin_layout/                # Arduino pin configuration
-│   └── components_specification/  # Hardware component details
+├── dashboard/                     # Web Dashboard (React + Vite + TypeScript)
+│   ├── src/
+│   │   ├── components/            # React components
+│   │   │   ├── dashboard/         # Dashboard-specific components
+│   │   │   └── ui/                # Reusable UI components (shadcn/ui)
+│   │   ├── pages/                 # Application pages
+│   │   ├── hooks/                 # Custom React hooks
+│   │   ├── lib/                   # Utility functions
+│   │   └── assets/                # Images and static assets
+│   ├── public/                    # Public static files
+│   ├── package.json               # Dependencies and scripts
+│   ├── vite.config.ts             # Vite configuration
+│   ├── tailwind.config.ts         # Tailwind CSS configuration
+│   └── tsconfig.json              # TypeScript configuration
 │
-├── software/
-│   ├── arduino_code/              # Embedded C/C++ firmware
-│   ├── bluetooth_apk/             # Mobile application for remote control
-│   ├── dashboard_frontend/        # Next.js + TailwindCSS web interface
-│   └── dashboard_backend/         # Node.js + Express + MongoDB API
-│
-├── documentation/
-│   ├── report/                    # Project reports and research papers
-│   └── images/                    # Photos and diagrams
-│
-├── sprout.ino                     # Main Arduino sketch
+├── sprout.ino                     # Main Arduino sketch (C/C++)
 └── README.md                      # Project documentation
 ```
 
@@ -115,11 +117,14 @@ SPROUT/
 - **Communication**: Bluetooth (HC-05/HC-06), Serial Communication
 
 ### Software
-- **Programming Languages**: C/C++, JavaScript
-- **Frameworks**: Next.js, Node.js, Express
-- **Database**: MongoDB (for data logging and analytics)
-- **Development Tools**: Arduino IDE, VS Code
+- **Programming Languages**: C/C++ (Arduino), TypeScript, JavaScript
+- **Frontend Framework**: React 18 with Vite
+- **UI Components**: shadcn/ui, Radix UI
 - **Styling**: TailwindCSS
+- **Charts & Visualization**: Recharts
+- **State Management**: TanStack Query (React Query)
+- **Routing**: React Router DOM
+- **Development Tools**: Arduino IDE, VS Code, Vite
 
 ---
 
@@ -128,19 +133,20 @@ SPROUT/
 ### Prerequisites
 
 - Arduino IDE installed
-- Node.js and npm installed
-- MongoDB instance (local or cloud)
+- Node.js (v18 or higher) and npm installed
 - Bluetooth-enabled mobile device
 
 ### Hardware Setup
 
-1. Connect components according to the circuit diagram in `hardware/circuit_diagram/`
+1. Connect components according to the pin configuration:
+   - Motor Driver (L293D) to pins 8, 9, 10, 11
+   - Additional controls to pins 6, 7
 2. Upload `sprout.ino` to Arduino Uno using Arduino IDE
 3. Pair Bluetooth module with your mobile device
 
 ### Software Setup
 
-#### Arduino
+#### Arduino Firmware
 ```bash
 # Open sprout.ino in Arduino IDE
 # Select Board: Arduino Uno
@@ -148,24 +154,22 @@ SPROUT/
 # Click Upload
 ```
 
-#### Dashboard Backend
+#### Web Dashboard
 ```bash
-cd software/dashboard_backend
-npm install
-npm start
-```
+# Navigate to dashboard directory
+cd dashboard
 
-#### Dashboard Frontend
-```bash
-cd software/dashboard_frontend
+# Install dependencies
 npm install
+
+# Start development server
 npm run dev
+
+# Build for production
+npm run build
 ```
 
-#### Mobile App
-```bash
-# Install the APK from software/bluetooth_apk/ on your Android device
-```
+The dashboard will be available at `http://localhost:5173`
 
 ---
 
